@@ -165,7 +165,7 @@ button {
 .text-track {
   display: flex;
   flex-direction: column;
-  animation: rotacaoTexto 3s linear infinite;
+  animation: rotacaoTexto 4s linear infinite;
 }
 
 .text-track span {
