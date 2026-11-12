@@ -867,7 +867,7 @@ button {
   *::before,
   *::after {
     scroll-behavior: auto !important;
-    animation-duration: 4s !important;
+    animation-duration: 3s !important;
     transition-duration: 0.01ms !important;
   }
 
