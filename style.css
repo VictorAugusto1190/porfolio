@@ -165,7 +165,7 @@ button {
 .text-track {
   display: flex;
   flex-direction: column;
-  animation: rotacaoTexto 8s linear infinite;
+  animation: rotacaoTexto 3s linear infinite;
 }
 
 .text-track span {
@@ -862,17 +862,16 @@ button {
 
 /* RESPEITAR REDUÇÃO DE MOVIMENTO */
 
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     scroll-behavior: auto !important;
-    animation-duration: 3s !important;
+    animation: none !important;
     transition-duration: 0.01ms !important;
-  }
+  } */
 
-  .reveal {
-    opacity: 1;
-    transform: none;
-  }
+.reveal {
+  opacity: 1;
+  transform: none;
 }
