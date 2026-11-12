@@ -44,7 +44,7 @@ button {
    HEADER
 ================================= */
 
-.header {
+.cabecalho {
   width: 100%;
   height: 85px;
   padding: 0 8%;
@@ -59,23 +59,23 @@ button {
   backdrop-filter: blur(15px);
 }
 
-.logo {
+.logotipo {
   font-size: 35px;
   font-weight: 800;
 }
 
-.logo span {
+.logotipo span {
   color: var(--blue);
 }
 
-.nav {
+.navegacao {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.nav a,
-.header-social a {
+.navegacao a,
+.redes-cabecalho a {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -83,12 +83,12 @@ button {
   transition: 0.3s;
 }
 
-.nav a:hover,
-.header-social a:hover {
+.navegacao a:hover,
+.redes-cabecalho a:hover {
   color: var(--blue);
 }
 
-.menu-toggle {
+.botao-menu {
   display: none;
   background: transparent;
   border: none;
@@ -99,7 +99,7 @@ button {
    HERO / APRESENTAÇÃO
 ================================= */
 
-.hero {
+.apresentacao {
   min-height: calc(100vh - 85px);
   padding: 90px 10%;
   display: flex;
@@ -109,11 +109,11 @@ button {
   position: relative;
 }
 
-.hero-content {
+.conteudo-apresentacao {
   max-width: 650px;
 }
 
-.eyebrow {
+.texto-superior {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -124,7 +124,7 @@ button {
   margin-bottom: 30px;
 }
 
-.status-dot {
+.ponto-status {
   width: 8px;
   height: 8px;
   background: #45db80;
@@ -133,7 +133,7 @@ button {
   box-shadow: 0 0 12px rgba(69, 219, 128, 0.5);
 }
 
-.hero h1 {
+.apresentacao h1 {
   font-size: clamp(42px, 6vw, 75px);
   line-height: 1.1;
   font-weight: 800;
@@ -141,13 +141,13 @@ button {
   margin-bottom: 20px;
 }
 
-.highlight,
-.section-heading h2 span {
+.destaque,
+.titulo-secao h2 span {
   color: var(--blue);
 }
 /* TEXTO GIRATÓRIO */
 
-.profession {
+.profissao {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -157,18 +157,18 @@ button {
   margin-bottom: 30px;
 }
 
-.text-window {
+.janela-texto {
   height: 40px;
   overflow: hidden;
 }
 
-.text-track {
+.faixa-texto {
   display: flex;
   flex-direction: column;
   animation: rotacaoTexto 4s linear infinite;
 }
 
-.text-track span {
+.faixa-texto span {
   height: 40px;
   flex-shrink: 0;
   display: flex;
@@ -194,7 +194,7 @@ button {
 }
 /* DESCRIÇÃO */
 
-.hero-description {
+.descricao-apresentacao {
   color: var(--gray);
   font-size: 18px;
   line-height: 1.9;
@@ -203,14 +203,14 @@ button {
 
 /* BOTÕES */
 
-.hero-buttons {
+.botoes-apresentacao {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
   margin-top: 35px;
 }
 
-.button {
+.botao {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -223,23 +223,23 @@ button {
   transition: 0.3s;
 }
 
-.button-primary {
+.botao-principal {
   background: var(--blue);
   color: #080808;
 }
 
-.button-primary:hover {
+.botao-principal:hover {
   background: var(--blue-light);
   transform: translateY(-4px);
   box-shadow: 0 10px 30px rgba(52, 174, 219, 0.2);
 }
 
-.button-outline {
+.botao-contorno {
   border: 1px solid var(--border);
   color: white;
 }
 
-.button-outline:hover {
+.botao-contorno:hover {
   border-color: var(--blue);
   color: var(--blue);
   transform: translateY(-4px);
@@ -247,7 +247,7 @@ button {
 
 /* TECNOLOGIAS NO HERO */
 
-.hero-footer {
+.tecnologias-apresentacao {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -262,7 +262,7 @@ button {
    FOTO DE PERFIL
 ================================= */
 
-.hero-image {
+.imagem-apresentacao {
   position: relative;
   width: 340px;
   height: 340px;
@@ -272,7 +272,7 @@ button {
   justify-content: center;
 }
 
-.image-decoration {
+.decoracao-imagem {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -287,7 +287,7 @@ button {
   }
 }
 
-.profile-image {
+.imagem-perfil {
   width: 290px;
   height: 290px;
   padding: 5px;
@@ -302,7 +302,7 @@ button {
   box-shadow: 0 0 60px rgba(52, 174, 219, 0.15);
 }
 
-.profile-image img {
+.imagem-perfil img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -311,7 +311,7 @@ button {
   display: block;
 }
 
-.image-label {
+.etiqueta-imagem {
   position: absolute;
   bottom: -15px;
   padding: 13px 20px;
@@ -330,28 +330,28 @@ button {
    SEÇÕES
 ================================= */
 
-.section {
+.secao {
   padding: 110px 10%;
 }
 
-.section-heading {
+.titulo-secao {
   margin-bottom: 55px;
 }
 
-.section-number {
+.numero-secao {
   color: var(--blue);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 3px;
 }
 
-.section-heading h2 {
+.titulo-secao h2 {
   font-size: clamp(30px, 4vw, 45px);
   margin-top: 20px;
   letter-spacing: -1.5px;
 }
 
-.section-heading > p {
+.titulo-secao > p {
   margin-top: 15px;
   color: var(--gray);
   font-size: 14px;
@@ -361,25 +361,25 @@ button {
    SOBRE MIM
 ================================= */
 
-.about {
+.sobre {
   background: var(--surface);
 }
 
-.about-content {
+.conteudo-sobre {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.about-text p {
+.texto-sobre p {
   color: var(--gray);
   font-size: 15px;
   line-height: 2;
   margin-bottom: 20px;
 }
 
-.about-card {
+.cartao-sobre {
   background: var(--background);
   border: 1px solid var(--border);
   padding: 35px;
@@ -387,22 +387,22 @@ button {
   transition: 0.3s;
 }
 
-.about-card:hover {
+.cartao-sobre:hover {
   border-color: var(--blue);
   transform: translateY(-5px);
 }
 
-.card-icon {
+.icone-cartao {
   color: var(--blue);
   font-size: 35px;
 }
 
-.about-card h3 {
+.cartao-sobre h3 {
   margin: 20px 0 12px;
   font-size: 19px;
 }
 
-.about-card p {
+.cartao-sobre p {
   color: var(--gray);
   font-size: 13px;
   line-height: 1.8;
@@ -412,13 +412,13 @@ button {
    TECNOLOGIAS
 ================================= */
 
-.tech-grid {
+.grade-tecnologias {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
 }
 
-.tech-card {
+.cartao-tecnologia {
   padding: 30px 18px;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -426,13 +426,13 @@ button {
   transition: 0.3s;
 }
 
-.tech-card:hover {
+.cartao-tecnologia:hover {
   border-color: var(--blue);
   transform: translateY(-7px);
   background: var(--surface-light);
 }
 
-.tech-icon {
+.icone-tecnologia {
   width: 45px;
   height: 45px;
   display: flex;
@@ -446,12 +446,12 @@ button {
   margin-bottom: 25px;
 }
 
-.tech-card h3 {
+.cartao-tecnologia h3 {
   font-size: 15px;
   margin-bottom: 10px;
 }
 
-.tech-card p {
+.cartao-tecnologia p {
   color: var(--gray);
   font-size: 11px;
   line-height: 1.6;
@@ -461,17 +461,17 @@ button {
    PROJETOS
 ================================= */
 
-.projects {
+.projetos {
   background: var(--surface);
 }
 
-.project-grid {
+.grade-projetos {
   display: grid;
   grid-template-columns: minmax(0, 650px);
   gap: 25px;
 }
 
-.project-card {
+.cartao-projeto {
   overflow: hidden;
   background: var(--background);
   border: 1px solid var(--border);
@@ -479,12 +479,12 @@ button {
   transition: 0.3s;
 }
 
-.project-card:hover {
+.cartao-projeto:hover {
   border-color: var(--blue);
   transform: translateY(-5px);
 }
 
-.project-preview {
+.previa-projeto {
   min-height: 260px;
   display: flex;
   align-items: center;
@@ -496,7 +496,7 @@ button {
   overflow: hidden;
 }
 
-.project-preview::before {
+.previa-projeto::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -506,65 +506,65 @@ button {
   background-size: 30px 30px;
 }
 
-.preview-content {
+.conteudo-previa {
   text-align: center;
   position: relative;
 }
 
-.preview-content span {
+.conteudo-previa span {
   color: var(--blue);
   font-size: 10px;
   letter-spacing: 3px;
 }
 
-.preview-content h3 {
+.conteudo-previa h3 {
   font-size: 55px;
   line-height: 0.95;
   margin: 15px 0;
   letter-spacing: -3px;
 }
 
-.preview-content p {
+.conteudo-previa p {
   color: var(--gray);
   font-size: 11px;
   letter-spacing: 3px;
 }
 
-.project-info {
+.informacoes-projeto {
   padding: 30px;
 }
 
-.project-title {
+.titulo-projeto {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
 }
 
-.project-title h3 {
+.titulo-projeto h3 {
   font-size: 20px;
 }
 
-.project-number {
+.numero-projeto {
   color: var(--blue);
   font-size: 13px;
 }
 
-.project-info > p {
+.informacoes-projeto > p {
   color: var(--gray);
   font-size: 13px;
   line-height: 1.8;
   margin-top: 15px;
 }
 
-.project-tags {
+.etiquetas-projeto {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin: 20px 0 25px;
 }
 
-.project-tags span {
+.etiquetas-projeto span {
   color: var(--blue);
   background: rgba(52, 174, 219, 0.1);
   padding: 8px 12px;
@@ -573,7 +573,7 @@ button {
   font-weight: 800;
 }
 
-.project-link {
+.ligacao-projeto {
   display: inline-flex;
   gap: 12px;
   color: white;
@@ -583,7 +583,7 @@ button {
   transition: 0.3s;
 }
 
-.project-link:hover {
+.ligacao-projeto:hover {
   color: var(--blue);
 }
 
@@ -591,35 +591,35 @@ button {
    CONTATO
 ================================= */
 
-.contact {
+.contato {
   text-align: center;
   padding-top: 130px;
   padding-bottom: 130px;
 }
 
-.contact-content {
+.conteudo-contato {
   max-width: 700px;
   margin: auto;
 }
 
-.contact h2 {
+.contato h2 {
   font-size: clamp(35px, 5vw, 60px);
   line-height: 1.2;
   margin: 25px 0;
 }
 
-.contact h2 span {
+.contato h2 span {
   color: var(--blue);
 }
 
-.contact p {
+.contato p {
   color: var(--gray);
   font-size: 14px;
   line-height: 1.9;
   margin-bottom: 30px;
 }
 
-.contact-link {
+.ligacao-contato {
   display: block;
   width: fit-content;
   margin: 25px auto 0;
@@ -629,7 +629,7 @@ button {
   transition: 0.3s;
 }
 
-.contact-link:hover {
+.ligacao-contato:hover {
   color: var(--blue);
 }
 
@@ -637,7 +637,7 @@ button {
    FOOTER
 ================================= */
 
-.footer {
+.rodape {
   min-height: 100px;
   padding: 25px 8%;
   display: flex;
@@ -647,12 +647,12 @@ button {
   border-top: 1px solid var(--border);
 }
 
-.footer p {
+.rodape p {
   color: var(--gray);
   font-size: 11px;
 }
 
-.back-top {
+.voltar-topo {
   color: var(--blue);
   font-size: 10px;
   font-weight: 800;
@@ -663,7 +663,7 @@ button {
    ANIMAÇÕES DE ENTRADA
 ================================= */
 
-.reveal {
+.revelar {
   opacity: 0;
   transform: translateY(30px);
   transition:
@@ -671,7 +671,7 @@ button {
     transform 0.8s ease;
 }
 
-.reveal.active {
+.revelar.ativo {
   opacity: 1;
   transform: translateY(0);
 }
@@ -681,58 +681,58 @@ button {
 ================================= */
 
 @media (max-width: 1050px) {
-  .hero {
+  .apresentacao {
     padding: 80px 6%;
     gap: 30px;
   }
 
-  .hero-image {
+  .imagem-apresentacao {
     width: 280px;
     height: 280px;
   }
 
-  .profile-image {
+  .imagem-perfil {
     width: 240px;
     height: 240px;
   }
 
-  .tech-grid {
+  .grade-tecnologias {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .header {
+  .cabecalho {
     padding: 0 5%;
   }
 
-  .nav {
+  .navegacao {
     gap: 17px;
   }
 }
 
 @media (max-width: 760px) {
-  .header {
+  .cabecalho {
     height: 75px;
   }
 
-  .header-social {
+  .redes-cabecalho {
     display: none;
   }
 
-  .menu-toggle {
+  .botao-menu {
     display: flex;
     flex-direction: column;
     gap: 5px;
     z-index: 102;
   }
 
-  .menu-toggle span {
+  .botao-menu span {
     width: 25px;
     height: 2px;
     background: white;
     transition: 0.3s;
   }
 
-  .nav {
+  .navegacao {
     position: absolute;
     top: 75px;
     left: 0;
@@ -747,114 +747,114 @@ button {
     transition: max-height 0.4s ease;
   }
 
-  .nav.open {
+  .navegacao.aberta {
     max-height: 350px;
     border-bottom: 1px solid var(--border);
   }
 
-  .nav a {
+  .navegacao a {
     padding: 20px;
     width: 100%;
     text-align: center;
   }
 
-  .hero {
+  .apresentacao {
     min-height: auto;
     padding: 80px 7%;
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .hero-content {
+  .conteudo-apresentacao {
     width: 100%;
   }
 
-  .eyebrow {
+  .texto-superior {
     justify-content: center;
     font-size: 9px;
   }
 
-  .hero h1 {
+  .apresentacao h1 {
     font-size: 45px;
     letter-spacing: -2px;
   }
 
-  .profession {
+  .profissao {
     justify-content: center;
     font-size: 23px;
   }
 
-  .hero-description {
+  .descricao-apresentacao {
     margin: auto;
     font-size: 14px;
   }
 
-  .hero-buttons {
+  .botoes-apresentacao {
     justify-content: center;
   }
 
-  .hero-footer {
+  .tecnologias-apresentacao {
     justify-content: center;
     gap: 15px;
     font-size: 9px;
   }
 
-  .hero-image {
+  .imagem-apresentacao {
     width: 260px;
     height: 260px;
     margin-bottom: 20px;
   }
 
-  .profile-image {
+  .imagem-perfil {
     width: 220px;
     height: 220px;
   }
 
-  .section {
+  .secao {
     padding: 80px 7%;
   }
 
-  .about-content {
+  .conteudo-sobre {
     grid-template-columns: 1fr;
     gap: 25px;
   }
 
-  .tech-grid {
+  .grade-tecnologias {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 420px) {
-  .hero h1 {
+  .apresentacao h1 {
     font-size: 37px;
   }
 
-  .profession {
+  .profissao {
     font-size: 18px;
     gap: 8px;
   }
 
-  .text-window {
+  .janela-texto {
     height: 30px;
   }
 
-  .text-track span {
+  .faixa-texto span {
     height: 30px;
   }
 
-  .hero-buttons {
+  .botoes-apresentacao {
     flex-direction: column;
   }
 
-  .button {
+  .botao {
     width: 100%;
   }
 
-  .tech-card {
+  .cartao-tecnologia {
     padding: 22px 14px;
   }
 
-  .footer {
+  .rodape {
     flex-direction: column;
     text-align: center;
   }
@@ -871,7 +871,7 @@ button {
     transition-duration: 0.01ms !important;
   } */
 
-.reveal {
+.revelar {
   opacity: 1;
   transform: none;
 }

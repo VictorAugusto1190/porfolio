@@ -2,15 +2,15 @@
    MENU MOBILE
 ================================= */
 
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
+const botaoMenu = document.querySelector(".botao-menu");
+const navegacao = document.querySelector(".navegacao");
 
-menuToggle.addEventListener("click", () => {
-  const menuAberto = nav.classList.toggle("open");
+botaoMenu.addEventListener("click", () => {
+  const menuAberto = navegacao.classList.toggle("aberta");
 
-  menuToggle.setAttribute("aria-expanded", menuAberto);
+  botaoMenu.setAttribute("aria-expanded", menuAberto);
 
-  menuToggle.setAttribute(
+  botaoMenu.setAttribute(
     "aria-label",
     menuAberto ? "Fechar menu" : "Abrir menu",
   );
@@ -18,15 +18,15 @@ menuToggle.addEventListener("click", () => {
 
 /* FECHAR MENU AO CLICAR EM UM LINK */
 
-const linksMenu = document.querySelectorAll(".nav a");
+const linksNavegacao = document.querySelectorAll(".navegacao a");
 
-linksMenu.forEach((link) => {
+linksNavegacao.forEach((link) => {
   link.addEventListener("click", () => {
-    nav.classList.remove("open");
+    navegacao.classList.remove("aberta");
 
-    menuToggle.setAttribute("aria-expanded", "false");
+    botaoMenu.setAttribute("aria-expanded", "false");
 
-    menuToggle.setAttribute("aria-label", "Abrir menu");
+    botaoMenu.setAttribute("aria-label", "Abrir menu");
   });
 });
 
@@ -34,14 +34,14 @@ linksMenu.forEach((link) => {
    ANIMAÇÃO AO ROLAR A PÁGINA
 ================================= */
 
-const elementos = document.querySelectorAll(".reveal");
+const elementos = document.querySelectorAll(".revelar");
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("active");
+          entry.target.classList.add("ativo");
 
           observer.unobserve(entry.target);
         }
@@ -57,7 +57,7 @@ if ("IntersectionObserver" in window) {
   });
 } else {
   elementos.forEach((elemento) => {
-    elemento.classList.add("active");
+    elemento.classList.add("ativo");
   });
 }
 
