@@ -48,7 +48,7 @@ if ("IntersectionObserver" in window) {
       });
     },
     {
-      threshold: 0.15,
+      threshold: 0,
     },
   );
 
